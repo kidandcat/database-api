@@ -45,9 +45,12 @@ app.use(cookieParser());
 
 
 //ROUTES
-//buy
-var buy = require('./api/buy');
-app.use('/', buy);
+//skeleton
+var skeleton = require('./api/skeleton');
+app.use('/', skeleton);
+//tables
+var tables = require('./api/tables');
+app.use('/', tables);
 
 
 app.get('/favicon.ico', function(req, res, next) {
